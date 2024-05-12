@@ -11,4 +11,4 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 定義容器啟動時執行的命令
-CMD ["python", "hour_registration.py"]
+# CMD ["python", "hour_registration.py"]
