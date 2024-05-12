@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # 安裝 requirements.txt 中列出的所有依賴
-RUN pip install --no-cache-dir -r requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txt
 
 # 定義容器啟動時執行的命令
 # CMD ["python", "hour_registration.py"]
