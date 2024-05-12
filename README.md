@@ -1,34 +1,27 @@
-# Hour Registration Agent
+# 工時註冊代理公開版
 
-Repository that contains the code of a [Medium article](https://) called "Unleash Your AI Agent: Automate Time Tracking With LangGraph and Meta Llama 3"
+這個倉庫包含了一篇名為「釋放您的 AI 代理：利用 LangGraph 和 Meta Llama 3 自動化時間追蹤」的 [Medium 文章](https://) 的代碼，同時也是一個使用 Docker 運行的 Python 應用，主要用於記錄和管理工時。
 
-![AI Agent](cover.jpg)
+![AI 代理](cover.jpg)
 
-<!-- Ensure there's a blank line after the image for spacing -->
+<!-- 確保圖片後有空行，以便排版 -->
 
-## Introduction
+## 簡介
 
-As a freelancer, the accuracy of my invoicing is crucial. Achieving this requires accurately recording my work hours. I aim to log these hours daily, capturing my activities while they are still fresh in my mind.
+作為一名自由職業者，準確的開票至關重要。這需要準確地記錄我的工作時間。我目標是每天記錄這些小時，捕捉當下的活動，當記憶尚新時。
 
-Yet, despite my best intentions, the daily whirlwind of tasks often leads to oversights. This can result in the need to painstakingly reconstruct my day, a process that is not only time-consuming but also frustrating.
+然而，儘管我懷著最好的意圖，日常的繁忙往往導致疏忽。這可能會導致我需要費時地重建我的一天，這個過程不僅耗時，而且令人沮喪。
 
-Fascinated by artificial intelligence's potential to simplify complex tasks, I created an AI-driven solution for automating hour registration. This article describes my endeavor to streamline my daily routine and ensure no critical detail slips through the cracks.
+被人工智能簡化複雜任務的潛力所吸引，我創建了一個由 AI 驅動的解決方案，用於自動化工時註冊。這篇文章描述了我如何簡化我的日常工作流程，確保不會漏掉任何關鍵細節。
 
-The aim is to free up valuable time and mental energy, allowing me to focus on what truly matters: work.
+目的是釋放寶貴的時間和精力，讓我能專注於真正重要的工作。
 
-## Getting Started
+## 建立和運行
 
-This project was developed and tested with Python 3.12
+這個項目是在 Python 3.12 環境下開發和測試的。使用 Docker，可以輕鬆建立並運行此應用。
 
-### Using pip or conda
+要建立 Docker 映像並運行容器，請執行：
 
-If you use pip, you can install the requirements using:
-```pip install -r requirements.txt```
-
-or if you use conda use:
-```conda env create -f environment.yml```
-
-After installation run the agent with:
-```python hour_registration.py```
-
-For more information check the [Medium article](https://) article.
+```bash
+docker build -t hour_registration_agent_public .
+docker run hour_registration_agent_public
